@@ -7,11 +7,11 @@ describe "bachelor" do
       expect(get_first_name_of_season_winner(data, "season 10")).to eq("Tessa")
     end
 
-    it "returns 'Courtney' when passed the data and 'season 10'" do
+    it "returns 'Courtney' when passed the data and 'season 16'" do
       expect(get_first_name_of_season_winner(data, "season 16")).to eq("Courtney")
     end
 
-    it "returns 'Emily' when passed the data and 'season 10'" do
+    it "returns 'Emily' when passed the data and 'season 15'" do
       expect(get_first_name_of_season_winner(data, "season 15")).to eq("Emily")
     end
   end
@@ -60,7 +60,7 @@ describe "bachelor" do
 
   describe "#get_average_age_for_season" do
     it "returns 26 when passed the data and the string 'season 10'" do
-      expect(get_average_age_for_season(data, "season 10")).to eq(26)
+      expect(get_average_age_for_season(data, "season 10")).to eq(25)
     end
     it "returns 26 when passed the data and the string 'season 11'" do
       expect(get_average_age_for_season(data, "season 11")).to eq(27)
